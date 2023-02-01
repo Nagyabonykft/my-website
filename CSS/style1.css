@@ -1,0 +1,105 @@
+* {margin: 0; padding: 0; text-decoration: none; list-style-type: none;}
+
+@font-face {
+    src: url(/fonts/HARRYP__.TTF);
+    font-family: Harry;
+}
+
+.teljes {
+    background-image: url(/images/háttér.jpg);
+    background-size: cover;
+    font-family: Harry;
+}
+
+
+.fej {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.19);
+    border-bottom: solid 4px rgba(128, 128, 128, 0.21);
+}
+
+.logo {
+    display: block;
+    color: black;
+    float: left;
+    position: relative;
+    left: 25px;
+    font-size: 35px;
+    height: 100px;
+    width: 250px;
+    line-height: 100px;
+}
+
+.mainlista {
+    width: 660px;
+    height: 100px;
+    margin: auto;
+}
+
+.mainlista li {
+    float: left;
+}
+
+.mainlista li a {
+    display: block;
+    width: 220px;
+    height: 100px;
+    font-size: 40px;
+    line-height: 100px;
+    text-align: center;
+    color: black;
+}
+
+.mainlista a:hover {
+    background-color: rgba(0, 0, 0, 0.233);
+}
+
+.filmlista {
+    width: 600px;
+    height: 100px;
+    display: none;
+    transition: 1s;
+
+}
+
+.filmlista li a {
+    font-size: 30px;
+    width: 600px;
+    height: 100px;
+}
+
+.filmbtn:hover .filmlista {
+    display: block;
+    position: absolute;
+    left: 400px;
+    animation: elő 1s ease;
+}
+
+@keyframes elő {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.filmbtn:hover .filmlista li a {
+    border-left: solid;
+    border-right: solid;
+}
+
+.teteje {
+    border-top: solid;
+    border-radius: 5px;
+}
+
+.alja {
+    border-bottom: solid;
+    border-radius: 5px;
+}
